@@ -374,7 +374,10 @@ p {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
-
+a:link {
+    color: #000; text-decoration: none;}
+a:visited {
+    color: #000; text-decoration: none;}
 .skillbar-title span {
     display: block;
     text-align: left;
