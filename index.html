@@ -8,21 +8,21 @@
     <title>sia</title>
     <link rel="icon" href="./img_/faviconlogo.png">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+    <script src="./js/page.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
     <link rel="stylesheet" href="./css/index.css">
-<link rel="stylesheet" href="./font/Coves_Light.woff">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@200;300;400;500;600;700&family=Nanum+Myeongjo&family=Poiret+One&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="./font/Coves_Light.woff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@200;300;400;500;600;700&family=Nanum+Myeongjo&family=Poiret+One&display=swap"
+        rel="stylesheet">
     <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css"> -->
-    <link rel="stylesheet" href="https://cpwebassets.codepen.io/assets/editor/editor-f7fe2b17a4e996509b86608d7cd3f58f9c115715b6157070005c6e7df9ecf341.css">
+
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-
 </head>
 
 <body>
@@ -31,9 +31,10 @@
         <!-- <i class="fa fa-bars fa-3x"></i> -->
         <div class="header-links">
             <ul>
-                <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+                <li data-menuanchor="secondPage"><a href="#portfolio">PORTFOLIO</a></li>
+                <li data-menuanchor="thirdPage"><a href="#about">ABOUT</a></li>
                 <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
-                <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+
             </ul>
         </div>
     </div>
@@ -48,9 +49,9 @@
 
         <!-- begin section -->
 
-        <div class="section aboutme" data-anchor="aboutme">
+        <div class="section aboutme" data-anchor="home">
             <div class="opaque-bg animated fadeInDown">
-                <h1>sia</h1>
+                <h1 style="color: #fff;">sia</h1>
                 <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
             </div>
             <i id="moveDown" class="xi-angle-down-thin xi-5x bounce"></i>
@@ -59,139 +60,330 @@
 
         <!-- begin section -->
 
-        <div class="section">
+        <div class="section" data-anchor="portfolio">
+            <div id="top_button">
+                <input type="radio" name="button" class="menu_bt" id="menu_bt" checked="checked" />
+                <label for="menu_bt" id="me_bt">
+                    <h2>WEB PUBLISHING PROJECT</h2>
+                </label>
+
+                <input type="radio" name="button" class="menu_bt" id="menu_bt2" />
+                <label for="menu_bt2" id="me_bt2">
+                    <h2>WEB DESIGN PROJECT</h2>
+                </label>
+
+                <input type="radio" name="button" class="menu_bt" id="menu_bt3" />
+                <label for="menu_bt3" id="me_bt3">
+                    <h2>APP DESIGN PROJECT</h2>
+                </label>
+            </div>
             <div class="container">
-                <div class="card">
-                    <h2>comma</h2>
-                    <i class="fas fa-arrow-right"></i>
-                    <p>a lonely ticket.</p>
-                    <div class="pic"></div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <button>
-                    </button>
+                <div class="gridbox">
+                    <div class="toucharea">
+                        <div class="card card1">
+                            <h2>comma</h2>
+                            <img src="./img/commabarcode.svg" alt="">
+                            <h3>comma</h3>
+                            <h4>web publshing</h4>
+                            <p>design by sia</p>
+                            <p>2022.10.10 ~ 11.30</p>
+                            <div class="pic"></div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <button>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="toucharea">
+                        <div class="card card1">
+                            <h2>comma</h2>
+                            <img src="./img/commabarcode.svg" alt="">
+                            <h3>comma</h3>
+                            <h4>web publshing</h4>
+                            <p>design by sia</p>
+                            <p>2022.10.10 ~ 11.30</p>
+                            <div class="pic"></div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <button>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="toucharea">
+                        <div class="card card2">
+                            <h2>scribbler</h2>
+                            <img src="./img/scribblerbarcode.svg" alt="">
+                            <h3>scribbler</h3>
+                            <h4>web publshing</h4>
+                            <p>design by sia</p>
+                            <p>2023.02.03 ~ 02.15</p>
+                            <div class="pic"></div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <button>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card card2">
-                    <h2>scribbler</h2>
-                    <i class="fas fa-arrow-right"></i>
-                    <p>a lonely ticket.</p>
-                    <div class="pic"></div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <button>
-                    </button>
+                <div class="gridbox2" id="remove">
+                    <div class="toucharea">
+                        <div class="card card">
+                            <h2>comma</h2>
+                            <img src="./img/canonbarcode.svg" alt="">
+                            <h3>comma</h3>
+                            <h4>web design</h4>
+                            <p>design by sia</p>
+                            <p>2022.07.20 ~ 8.30</p>
+                            <div class="pic"></div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <button>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="toucharea">
+                        <div class="card card3">
+                            <h2>canon</h2>
+                            <img src="./img/canonbarcode.svg" alt="">
+                            <h3>canon</h3>
+                            <h4>web design</h4>
+                            <p>design by sia</p>
+                            <p>2022.02.20 ~ 03.20</p>
+                            <div class="pic"></div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <button>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card card3">
-                    <h2>canon</h2>
-                    <i class="fas fa-arrow-right"></i>
-                    <p>a lonely ticket.</p>
-                    <div class="pic"></div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <button>
-                    </button>
-                </div>
-                <div class="card card4">
-                    <h2>OLYMPIC</h2>
-                    <i class="fas fa-arrow-right"></i>
-                    <p>a lonely ticket.</p>
-                    <div class="pic"></div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                    <button>
-                    </button>
+                <div class="gridbox3" id="remove">
+                    <div class="toucharea">
+                        <div class="card card2">
+                            <h2>scribbler</h2>
+                            <img src="./img/olympicbarcode.svg" alt="">
+                            <h3>scribbler</h3>
+                            <h4>app design</h4>
+                            <p>design by sia</p>
+                            <p>2022.01.05 ~ 02.05</p>
+                            <div class="pic"></div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <button>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="toucharea">
+                        <div class="card card4">
+                            <h2>OLYMPIC</h2>
+                            <img src="./img/commabarcode.svg" alt="">
+                            <h3>olympic</h3>
+                            <h4>app design</h4>
+                            <p>design by sia</p>
+                            <p>2021.10.20 ~ 12.30</p>
+                            <div class="pic"></div>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <button>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -203,49 +395,65 @@
 
         <!-- begin section -->
 
-        <div class="section" data-anchor="skills">
+        <div class="section" data-anchor="aboutme">
             <div class="content">
                 <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
-                <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Brad Engelhardt! I'm a Silicon Valley based Web
-                    Designer & Front-end Developer focused on creating clean, responsive web designs!</p>
-
+                <div class="skillbox">
+                    
                 <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
+                    <div class="boxtitle">DESIGN</div>
+                    <div class="skillbar clearfix " data-percent="94%">
+                        <div class="skillbar-title" style="background: #e1e1e4;"><span>figma</span></div>
+                        <div class="skillbar-bar" style="background: #066115;"></div>
+                        <div class="skill-bar-percent">95%</div>
+                    </div> <!-- End Skill Bar -->
+
                     <div class="skillbar clearfix " data-percent="90%">
-                        <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML5</span></div>
-                        <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+                        <div class="skillbar-title" style="background: #e1e1e4;"><span>XD</span></div>
+                        <div class="skillbar-bar" style="background: #824211;"></div>
                         <div class="skill-bar-percent">90%</div>
                     </div> <!-- End Skill Bar -->
 
-                    <div class="skillbar clearfix " data-percent="80%">
-                        <div class="skillbar-title" style="background: #EBB035;"><span>CSS3</span></div>
-                        <div class="skillbar-bar" style="background: #EBB035;"></div>
-                        <div class="skill-bar-percent">80%</div>
+                    <div class="skillbar clearfix " data-percent="55%">
+                        <div class="skillbar-title" style="background: #e1e1e4;"><span>protopie</span></div>
+                        <div class="skillbar-bar" style="background: #06496d"></div>
+                        <div class="skill-bar-percent">55%</div>
                     </div> <!-- End Skill Bar -->
 
-                    <div class="skillbar clearfix " data-percent="75%">
-                        <div class="skillbar-title" style="background: #218559;"><span>Photoshop</span></div>
-                        <div class="skillbar-bar" style="background: #218559;"></div>
-                        <div class="skill-bar-percent">75%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="45%">
-                        <div class="skillbar-title" style="background: #6840D4;"><span>Rails</span></div>
-                        <div class="skillbar-bar" style="background: #6840D4;"></div>
-                        <div class="skill-bar-percent">45%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="30%">
-                        <div class="skillbar-title" style="background: #06A2CB;"><span>jQuery</span></div>
-                        <div class="skillbar-bar" style="background: #06A2CB;"></div>
-                        <div class="skill-bar-percent">30%</div>
-                    </div> <!-- End Skill Bar -->
-
-                    <div class="skillbar clearfix " data-percent="20%">
-                        <div class="skillbar-title" style="background: #AB4DD2;"><span>PHP</span></div>
-                        <div class="skillbar-bar" style="background: #AB4DD2;"></div>
-                        <div class="skill-bar-percent">20%</div>
+                    <div class="skillbar clearfix " data-percent="50%">
+                        <div class="skillbar-title" style="background: #e1e1e4;"><span>Photoshop</span></div>
+                        <div class="skillbar-bar" style="background: #4e066d;"></div>
+                        <div class="skill-bar-percent">50%</div>
                     </div> <!-- End Skill Bar -->
                 </div>
+
+                <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
+                    <div class="boxtitle">PUBLISHING</div>
+                    <div class="skillbar clearfix " data-percent="94%">
+                        <div class="skillbar-title" style="background: #e1e1e4;"><span>HTML5</span></div>
+                        <div class="skillbar-bar" style="background: #066115;"></div>
+                        <div class="skill-bar-percent">95%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="90%">
+                        <div class="skillbar-title" style="background: #e1e1e4;"><span>CSS3</span></div>
+                        <div class="skillbar-bar" style="background: #824211;"></div>
+                        <div class="skill-bar-percent">90%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="55%">
+                        <div class="skillbar-title" style="background: #e1e1e4;"><span>JS</span></div>
+                        <div class="skillbar-bar" style="background: #06496d"></div>
+                        <div class="skill-bar-percent">55%</div>
+                    </div> <!-- End Skill Bar -->
+
+                    <div class="skillbar clearfix " data-percent="50%">
+                        <div class="skillbar-title" style="background: #e1e1e4;"><span>jQuery</span></div>
+                        <div class="skillbar-bar" style="background: #4e066d;"></div>
+                        <div class="skill-bar-percent">50%</div>
+                    </div> <!-- End Skill Bar -->
+                </div>
+            </div>
             </div>
         </div>
         <!-- end section -->
@@ -253,48 +461,212 @@
         <!-- begin section -->
 
         <div class="section" data-anchor="contact">
-            <div class="content wow fadeInDown" data-wow-delay="0.2s">
+            <div class="content wow fadeInDown area" data-wow-delay="0.2s">
                 <h1>CONTACT ME</h1>
-                <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!
-                </p>
-                <br>
-                <div class="contact-form">
+                <div class="contact-area bg-color1 p-t-130 p-b-130" style="display: none;">
+                    <div class="container">
+                        <article class="" data-aos="fade-up">
+                            <div class="row m-b-60">
+                                <div class="col-md-4">
+                                    <div class="contact-info"></div>
+                                        <div class="info-content">
+                                            <!-- <h5 class="heading-5"><a href="#">Office Address</a></h5> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="contact-info"></div>
+                                        <div class="info-content">
+                                            <!-- <h5 class="heading-5"><a href="#">Email Address</a></h5> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="contact-info m-0"></div>
+                                        <div class="info-content">
+                                            <!-- <h5 class="heading-5"><a href="#">Phone Number</a></h5> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <div class="comment-form">
+                                        <!-- <script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script> -->
+                                        <div class="inner-title">
+                                            <!-- <h5 class="heading-5">Send Your Message</h5> -->
+                                        </div>
+                                        <form id="emailForm" class="gform" method="POST"
+                                            data-email="jwook486@gmail.com"
+                                            action="https://script.google.com/macros/s/AKfycbzTA2V-6c0OU-oB9nyy3DCJliSlAvdIXU_Dii4ng0KEhwh_l3TkDpZPD2mn4nqjF6Gf/exec">
+                                            <div class="form-row">
+                                                <div class="col-md-12">
+                                                    <div class="form-row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <h5 class="heading-5">Email address</h5>
+                                                                <input type="text" class="form-control" id="senderEmail"
+                                                                    name="senderEmail" placeholder="귀하의 메일 주소를 적어주세요"
+                                                                    required autocomplete="email">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <h5 class="heading-5">Name</h5>
+                                                                <input type="text" class="form-control" id="senderName"
+                                                                    name="senderName" placeholder="귀하의 이름을 적어주세요." required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-md-12">
+                                                            <div class="form-group">
+                                                                <h5 class="heading-5">Message</h5>
+                                                                <textarea class="form-control" id="message"
+                                                                    name="message" rows="5"
+                                                                    placeholder="전달하고자 하는 메세지를 적어주세요."></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <script type="text/javascript">
+                                                        (function () {
+                                                            // get all data in form and return object
+                                                            function getFormData(form) {
+                                                                var elements = form.elements;
+                                                                var honeypot;
 
-                    <div id="form-messages"></div>
-                    <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
-                        <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="NAME"
-                                data-error="Field can't be blank!" required>
-                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                            <div class="help-block with-errors"></div>
-                        </div>
+                                                                var fields = Object.keys(elements).filter(function (k) {
+                                                                    if (elements[k].name === "honeypot") {
+                                                                        honeypot = elements[k].value;
+                                                                        return false;
+                                                                    }
+                                                                    return true;
+                                                                }).map(function (k) {
+                                                                    if (elements[k].name !== undefined) {
+                                                                        return elements[k].name;
+                                                                        // special case for Edge's html collection
+                                                                    } else if (elements[k].length > 0) {
+                                                                        return elements[k].item(0).name;
+                                                                    }
+                                                                }).filter(function (item, pos, self) {
+                                                                    return self.indexOf(item) == pos && item;
+                                                                });
 
-                        <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL"
-                                data-error="Field can't be blank!" required>
-                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                            <div class="help-block with-errors"></div>
-                        </div>
+                                                                var formData = {};
+                                                                fields.forEach(function (name) {
+                                                                    var element = elements[name];
 
-                        <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
-                            <textarea data-minlength="10" class="form-control" id="message" name="message"
-                                placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
-                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="wow fadeInUp" data-wow-delay="1s">
-                            <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
-                        </div>
-                    </form>
-                    <br>
-                </div>
+                                                                    // singular form elements just have one value
+                                                                    formData[name] = element.value;
+
+                                                                    // when our element has multiple items, get their values
+                                                                    if (element.length) {
+                                                                        var data = [];
+                                                                        for (var i = 0; i < element.length; i++) {
+                                                                            var item = element.item(i);
+                                                                            if (item.checked || item.selected) {
+                                                                                data.push(item.value);
+                                                                            }
+                                                                        }
+                                                                        formData[name] = data.join(', ');
+                                                                    }
+                                                                });
+
+                                                                // add form-specific values into the data
+                                                                formData.formDataNameOrder = JSON.stringify(fields);
+                                                                formData.formGoogleSheetName = form.dataset.sheet || "responses"; // default sheet name
+                                                                formData.formGoogleSendEmail
+                                                                    = form.dataset.email || ""; // no email by default
+
+                                                                return { data: formData, honeypot: honeypot };
+                                                            }
+
+                                                            function handleFormSubmit(event) {  // handles form submit without any jquery
+                                                                event.preventDefault();           // we are submitting via xhr below
+                                                                var form = event.target;
+                                                                var formData = getFormData(form);
+                                                                var data = formData.data;
+
+                                                                // If a honeypot field is filled, assume it was done so by a spam bot.
+                                                                if (formData.honeypot) {
+                                                                    return false;
+                                                                }
+
+                                                                disableAllButtons(form);
+                                                                var url = form.action;
+                                                                var xhr = new XMLHttpRequest();
+                                                                xhr.open('POST', url);
+                                                                // xhr.withCredentials = true;
+                                                                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                                                                xhr.onreadystatechange = function () {
+                                                                    if (xhr.readyState === 4 && xhr.status === 200) {
+                                                                        form.reset();
+                                                                        var formElements = form.querySelector(".form-elements")
+                                                                        if (formElements) {
+                                                                            formElements.style.display = "none"; // hide form
+                                                                        }
+                                                                        var thankYouMessage = form.querySelector(".thankyou_message");
+                                                                        if (thankYouMessage) {
+                                                                            thankYouMessage.style.display = "block";
+                                                                            alert("메일 전송에 성공했습니다. 확인 후 회신드리겠습니다.");
+                                                                        }
+                                                                    }
+                                                                };
+                                                                // url encode form data for sending as post data
+                                                                var encoded = Object.keys(data).map(function (k) {
+                                                                    return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+                                                                }).join('&');
+                                                                xhr.send(encoded);
+                                                            }
+
+                                                            function loaded() {
+                                                                // bind to the submit event of our form
+                                                                var forms = document.querySelectorAll("form.gform");
+                                                                for (var i = 0; i < forms.length; i++) {
+                                                                    forms[i].addEventListener("submit", handleFormSubmit, false);
+                                                                }
+                                                            };
+                                                            document.addEventListener("DOMContentLoaded", loaded, false);
+
+                                                            function disableAllButtons(form) {
+                                                                var buttons = form.querySelectorAll("button");
+                                                                for (var i = 0; i < buttons.length; i++) {
+                                                                    buttons[i].disabled = true;
+                                                                }
+                                                            }
+                                                        })();
+                                                    </script>
+                                                    <div class="form-group m-0">
+                                                        <button id="btnSubmit" class="btn-submit mt-2">Send
+                                                            Message</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div style="display:none" class="thankyou_message">
+                                                <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+                                                </h2>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-md-4 offset-md-1">
+                                    <div class="contact-image"><img src="/assets/images/contact-image.png"
+                                            alt="contact image" /></div>
+                                </div> -->
+                            </div>
+                        </article>
+                    </div>
+                
             </div>
         </div>
         <!-- end section -->
 
         <!-- begin section -->
 
-        <div class="section fp-auto-height">
+        <div class="section fp-auto-height" data-anchor="connect">
             <div class="footer">
                 <p>CONNECT WITH ME</p>
                 <div class="social-links">
@@ -310,9 +682,7 @@
             </div>
         </div>
         <!-- end section -->
-
     </div>
-
     <script src="./js/index.js"></script>
 </body>
 
