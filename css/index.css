@@ -3,18 +3,40 @@
     font-style: normal;
     font-weight: normal;
     src: local('../font/Canon'), url('../font/CANON.woff') format('woff');
-    }
+}
+
 * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    /* width: 100%; */
+    overflow: overlay !important;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #0ca425c1;
+    
+    border-radius: 8rem;
+}
+html::-webkit-scrollbar-track-piece {
+    
+}
+html::-webkit-scrollbar {
+    width: 8px;
+    /* background: transparent; */
+}
+
+
 body {
     font-family: 'manrope', sans-serif !important;
     background: #e1e1e4;
     overflow-x: hidden !important;
+    overflow: overlay;
 }
+
 
 ul {
     list-style-type: none;
@@ -125,7 +147,8 @@ p {
     transition: all 0.4s ease-out;
     z-index: 500;
 }
-.header-links > ul{
+
+.header-links>ul {
     /* width: 150px; */
     float: right;
 }
@@ -147,8 +170,7 @@ p {
     -webkit-transition: all 0.2s ease-in;
 }
 
-.header-links a:hover {
-}
+.header-links a:hover {}
 
 /* slide out nav menu styles */
 
@@ -324,10 +346,12 @@ p {
     margin-top: 5vh;
     column-gap: 4vh;
 }
+
 .boxtitle {
     font-size: 1.2rem;
     /* font-weight: 400; */
 }
+
 .container-skillbar {
     display: flex;
     flex-direction: column;
@@ -374,10 +398,17 @@ p {
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
 }
+
 a:link {
-    color: #000; text-decoration: none;}
+    color: #000;
+    text-decoration: none;
+}
+
 a:visited {
-    color: #000; text-decoration: none;}
+    color: #000;
+    text-decoration: none;
+}
+
 .skillbar-title span {
     display: block;
     text-align: left;
@@ -704,10 +735,14 @@ h2 {
     width: 100%;
     height: 100%;
 }
-#top_button > input{
+
+#top_button>input {
     display: none;
 }
-.gridbox, .gridbox2, .gridbox3{
+
+.gridbox,
+.gridbox2,
+.gridbox3 {
     display: flex;
     position: absolute;
     width: 100%;
@@ -719,7 +754,8 @@ h2 {
     column-gap: 6vh;
     transition: all .3s ease-out;
 }
-#top_button{
+
+#top_button {
     position: relative;
     display: flex;
     justify-content: center;
@@ -727,22 +763,26 @@ h2 {
     top: 10%;
     z-index: 100;
 }
-#remove{
+
+#remove {
     visibility: hidden;
     opacity: 0;
 }
-.menu_bt + label h2{
+
+.menu_bt+label h2 {
     font-size: 1.8rem;
     font-weight: 400;
-    
+
 }
-.menu_bt + label{
+
+.menu_bt+label {
     position: relative;
     /* width: 370px; */
     transition: all 0.2s ease-out;
     opacity: 0.3;
 }
-.menu_bt + label::after {
+
+.menu_bt+label::after {
     content: "";
     position: absolute;
     display: inline-block;
@@ -758,23 +798,29 @@ h2 {
     z-index: -1;
     opacity: 0;
 }
-.menu_bt:checked + label{
-    
+
+.menu_bt:checked+label {
+
     opacity: 1;
 }
-.menu_bt:checked + label::after{
+
+.menu_bt:checked+label::after {
     transform: scale(1);
     opacity: 1;
 }
-.menu_bt:nth-of-type(1):checked + label:after{
+
+.menu_bt:nth-of-type(1):checked+label:after {
     background: #0ca425;
 }
-.menu_bt:nth-of-type(2):checked + label:after{
+
+.menu_bt:nth-of-type(2):checked+label:after {
     background: #0887cb;
 }
-.menu_bt:nth-of-type(3):checked + label:after{
+
+.menu_bt:nth-of-type(3):checked+label:after {
     background: #bf5606;
 }
+
 /* .title_text{
     position: absolute;
     top: 12%;
@@ -785,12 +831,13 @@ h2 {
     top: 12%;
     font-size: 2rem;
 } */
-h2 + img{
+h2+img {
     position: absolute;
     top: 16px;
     right: 10px;
     z-index: 100;
 }
+
 .container .card {
     position: relative;
     top: 50%;
@@ -804,16 +851,18 @@ h2 + img{
     /* box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); */
     transform-origin: center center;
     transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotate(65deg);
-    box-shadow:50px -44px 18px 0 rgba(0, 0, 0, 0.45);
+    box-shadow: 50px -44px 18px 0 rgba(0, 0, 0, 0.45);
     transition: all 0.3s ease;
 }
+
 .container .toucharea:hover .card {
     /* border-bottom: 0.6px solid #11111175; */
     /* border-right: 0.6px solid #11111175; */
     transform: translateX(-50%) translateY(-50%) rotateX(0deg) rotate(0deg);
-    box-shadow:38px 38px 18px 0 rgba(0, 0, 0, 0.45);
-    
+    box-shadow: 38px 38px 18px 0 rgba(0, 0, 0, 0.45);
+
 }
+
 .container .card:before {
     content: "";
     z-index: 99;
@@ -843,6 +892,7 @@ h2 + img{
     background-color: #e1e1e4;
     transition: all 0.3s ease;
 }
+
 .toucharea {
     position: relative;
     width: 620px;
@@ -850,6 +900,7 @@ h2 + img{
     /* background: #000000; */
     border-radius: 50vh;
 }
+
 .container .card ul {
     z-index: 99;
     position: absolute;
@@ -878,12 +929,15 @@ h2 + img{
     text-shadow: 0.5px 1px 1px rgba(0, 0, 0, 0.5);
     color: #fff;
 }
+
 .container .card2 h2 {
     font-family: "Italiana", serif;
 }
+
 .container .card3 h2 {
     font-family: "Canon";
 }
+
 .container .card4 h2 {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 3.4rem;
@@ -897,6 +951,7 @@ h2 + img{
     font-size: 40px;
     cursor: pointer;
 }
+
 .container .card h3 {
     position: absolute;
     bottom: 20px;
@@ -905,6 +960,7 @@ h2 + img{
     writing-mode: vertical-lr;
     transform: rotate(180deg);
 }
+
 .container .card h4 {
     position: absolute;
     bottom: 20px;
@@ -915,6 +971,7 @@ h2 + img{
     transform: rotate(180deg);
     opacity: 0.5;
 }
+
 .container .card p {
     z-index: 99;
     position: absolute;
@@ -929,10 +986,12 @@ h2 + img{
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.container .card p:nth-of-type(2){
+
+.container .card p:nth-of-type(2) {
     font-size: 11px;
     right: 54px;
 }
+
 .container .card .pic {
     z-index: 100;
     width: 435px;
@@ -971,14 +1030,17 @@ h2 + img{
     -webkit-transform: scale(1);
     transform: scale(1);
 }
+
 .container .toucharea:hover .card:after {
     border: 1px solid #00000020;
     background-color: #7C7C7D;
 }
+
 .container .toucharea:hover .card:before {
     border: 1px solid #00000020;
     background-color: #e1e1e4;
 }
+
 .container .card button {
     position: absolute;
     right: 14px;
@@ -993,6 +1055,7 @@ h2 + img{
     transition: all 0.4s ease;
     mix-blend-mode: exclusion;
 }
+
 /* .container .card h4:after {
     content: "";
     position: absolute;
@@ -1009,6 +1072,7 @@ h2 + img{
 .gridbox2 .card button {
     background-color: #D16414;
 }
+
 .gridbox3 .card button {
     background-color: #2fa8e9;
 }
@@ -1034,11 +1098,13 @@ h2 + img{
     background-size: 103%;
     background-position: 200% 50%;
 }
+
 .container .card3 .pic {
     background-image: url("../img/canon.jpg");
     background-size: 135%;
     background-position: 130% 55%;
 }
+
 .container .card4 .pic {
     background-image: url("../img/olympic1.jpg");
     background-position: center 50%;
@@ -1264,32 +1330,41 @@ h2 + img{
 .fp-auto-height .fp-tableCell {
     height: auto !important;
 }
-.section h1{
+
+.section h1 {
     color: #000;
 }
+
 .section:last-child {
     text-align: left;
 }
+
 .section:last-child h1 {
     text-align: center;
 }
-.area{
+
+.area {
     /* width: 600px; */
 }
+
 textarea {
     width: 100%;
 }
+
 .row {
     display: flex;
     justify-content: center;
     margin-top: 3vh;
     /* align-items: flex-start; */
 }
+
 .heading-5 {
     font-weight: 400;
     font-size: 1.14rem;
 }
-.heading-5 + input, textarea {
+
+.heading-5+input,
+textarea {
     margin: 8px 0 18px;
     width: 650px;
     padding: 8px 10px;
@@ -1304,25 +1379,31 @@ textarea {
     /* background: #000; */
     resize: none;
 }
-input:focus, textarea:focus {
+
+input:focus,
+textarea:focus {
     outline: 1px solid #000;
     border-radius: 2px;
 }
+
 input:autofill,
 input:autofill:hover,
 input:autofill:focus,
 input:autofill:active {
-	-webkit-text-fill-color: #000;
+    -webkit-text-fill-color: #000;
     -webkit-box-shadow: 0 0 0px 1000px #fff inset;
     box-shadow: 0 0 0px 1000px #e1e1e4 inset;
     transition: background-color 5000s ease-in-out 0s;
 }
+
 textarea {
     height: 25vh;
     font-size: 1rem;
 }
-#senderEmail, #senderName {
-}
+
+#senderEmail,
+#senderName {}
+
 #btnSubmit {
     width: 120px;
     height: 40px;
@@ -1332,17 +1413,21 @@ textarea {
     color: #fff;
     transition: all 0.18s ease-out;
 }
+
 #btnSubmit:hover {
     background: #0ca425;
 }
+
 input::placeholder {
     font-size: 85% !important;
-    opacity: 0.6 !important; 
+    opacity: 0.6 !important;
 }
+
 textarea::placeholder {
     font-size: 90% !important;
-    opacity: 0.6 !important; 
+    opacity: 0.6 !important;
 }
+
 .m-0 {
     text-align: right;
 }
