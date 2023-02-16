@@ -444,7 +444,45 @@ a:visited {
     margin-right: auto;
     max-width: 1000px;
 }
-
+.aboutme_h1 {
+    position: relative;
+    font-size: 3rem; 
+    text-align: left; 
+    margin-bottom: 2%;
+}
+.aboutme_h1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    background-image: url("../img/me.jpg");
+    background-position: center 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.boxtitle ~ div{
+    display: flex;
+}
+.boxtitle ~ div div span {
+    display: block;
+    width: 100px;
+}
+.circle {
+    width: 24px;
+    height: 24px;
+    border: 1.5px solid #000;
+    border-radius: 100%;
+    margin-left: 20px;
+}
+.content_box {
+    display: flex;
+    justify-content: center;
+    column-gap: 10vh;
+}
 .content-slide {
     margin-left: auto;
     margin-right: auto;
@@ -1430,4 +1468,14 @@ textarea::placeholder {
 
 .m-0 {
     text-align: right;
+}
+.sns {
+    position: relative;
+    top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.snsicon img {
+    border-radius: 100%;
 }
