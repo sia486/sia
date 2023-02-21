@@ -1,482 +1,588 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sia</title>
-    <link rel="icon" href="./img_/faviconlogo.png">
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-    <script src="./js/page.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
-    <link rel="stylesheet" href="./css/index.css">
+    <meta property="og:title" content="sia.directory">
+    <meta property="og:description" content="남재욱의 포트폴리오입니다.">
+    <meta property="og:image" content="http://sia.directory/img/bg16.jpg">
+    <title>sia.directory</title>
+    <link rel="icon" href="./img/faviconlogo.png">
     <link rel="stylesheet" href="./font/Coves_Light.woff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Italiana&family=Manrope:wght@200;300;400;500;600;700&family=Nanum+Myeongjo&family=Poiret+One&display=swap"
         rel="stylesheet">
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css"> -->
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <!-- navbar header -->
-    <div class="nav-header">
-        <!-- <i class="fa fa-bars fa-3x"></i> -->
-        <div class="header-links">
-            <ul>
-                <li data-menuanchor="secondPage"><a href="#portfolio">PORTFOLIO</a></li>
-                <li data-menuanchor="thirdPage"><a href="#about">ABOUT</a></li>
-                <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+    <!-- partial:index.partial.html -->
 
-            </ul>
+    <body>
+        <!-- navbar header -->
+        <div class="nav-header">
+            <!-- <i class="fa fa-bars fa-3x"></i> -->
+            <div class="header-links">
+                <ul>
+                    <li data-menuanchor="secondPage"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li data-menuanchor="thirdPage"><a href="#about">ABOUT</a></li>
+                    <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+
+                </ul>
+            </div>
         </div>
-    </div>
-    <!-- end navbar header -->
+        <!-- end navbar header -->
 
-    <!-- sidebar slider -->
-    <!-- end navbar slider -->
+        <!-- sidebar slider -->
+        <!-- end navbar slider -->
 
-    <!-- begin fullpage -->
+        <!-- begin fullpage -->
 
-    <div id="fullpage">
+        <div id="fullpage">
 
-        <!-- begin section -->
+            <!-- begin section -->
 
-        <div class="section aboutme" data-anchor="home">
-            <div class="opaque-bg animated fadeInDown">
-                <h1 style="color: #fff;">sia</h1>
-                <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+            <div class="section main" data-anchor="home">
+                <div class="opaque-bg animated fadeInDown">
+                    <h1>sia</h1>
+                    <h2>남재욱의 포트폴리오
+                        <br>
+                    </h2>
+                    <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+                </div>
+                <i id="moveDown" class="xi-angle-down-thin xi-5x bounce"></i>
             </div>
-            <i id="moveDown" class="xi-angle-down-thin xi-5x bounce"></i>
-        </div>
-        <!-- end section -->
+            <!-- end section -->
 
-        <!-- begin section -->
+            <!-- begin section -->
 
-        <div class="section" data-anchor="portfolio">
-            <div id="top_button">
-                <input type="radio" name="button" class="menu_bt" id="menu_bt" checked="checked" />
-                <label for="menu_bt" id="me_bt">
-                    <h2>WEB PUBLISHING PROJECT</h2>
-                </label>
+            <div class="section" data-anchor="portfolio">
+                <div id="top_button" class="wow fadeInDown" data-wow-delay="0.2s">
+                    <input type="radio" name="button" class="menu_bt" id="menu_bt" checked="checked" />
+                    <label for="menu_bt" id="me_bt">
+                        <h2>PUBLISHING</h2>
+                    </label>
 
-                <input type="radio" name="button" class="menu_bt" id="menu_bt2" />
-                <label for="menu_bt2" id="me_bt2">
-                    <h2>WEB DESIGN PROJECT</h2>
-                </label>
+                    <input type="radio" name="button" class="menu_bt" id="menu_bt2" />
+                    <label for="menu_bt2" id="me_bt2">
+                        <h2>WEB DESIGN</h2>
+                    </label>
 
-                <input type="radio" name="button" class="menu_bt" id="menu_bt3" />
-                <label for="menu_bt3" id="me_bt3">
-                    <h2>APP DESIGN PROJECT</h2>
-                </label>
-            </div>
-            <div class="container">
-                <div class="gridbox">
-                    <a href="./comma/main/main.html">
-                        <div class="toucharea">
-                            <div class="card card1">
-                                <h2>comma</h2>
-                                <img src="./img/commabarcode.svg" alt="">
-                                <h3>comma</h3>
-                                <h4>web publshing</h4>
-                                <p>design by sia</p>
-                                <p>2022.10.10 ~ 11.30</p>
-                                <div class="pic"></div>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <button>
-                                </button>
+                    <input type="radio" name="button" class="menu_bt" id="menu_bt3" />
+                    <label for="menu_bt3" id="me_bt3">
+                        <h2>APP DESIGN</h2>
+                    </label>
+                </div>
+                <div class="container wow fadeInUp">
+                    <div class="gridbox">
+                        <a href="./comma/main/main.html">
+                            <div class="toucharea">
+                                <div class="card card1">
+                                    <h2>comma</h2>
+                                    <img src="./img/commabarcode.svg" alt="">
+                                    <h3>comma</h3>
+                                    <h4>web publshing</h4>
+                                    <p>published by sia</p>
+                                    <p>2022.10.10 ~ 11.30</p>
+                                    <div class="pic"></div>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <button>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="./scribbler/main.html">
-                        <div class="toucharea">
-                            <div class="card card2">
-                                <h2>scribbler</h2>
-                                <img src="./img/scribblerbarcode.svg" alt="">
-                                <h3>scribbler</h3>
-                                <h4>web publshing</h4>
-                                <p>design by sia</p>
-                                <p>2023.02.03 ~ 02.15</p>
-                                <div class="pic"></div>
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <button>
-                                </button>
+                        </a>
+                        <a href="./scribbler/main.html">
+                            <div class="toucharea">
+                                <div class="card card2">
+                                    <h2>scribbler</h2>
+                                    <img src="./img/scribblerbarcode.svg" alt="">
+                                    <h3>scribbler</h3>
+                                    <h4>web publshing</h4>
+                                    <p>published by sia</p>
+                                    <p>2023.02.03 ~ 02.15</p>
+                                    <div class="pic"></div>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <button>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="gridbox2" id="remove">
-                    <div class="toucharea">
-                        <div class="card card">
-                            <h2>comma</h2>
-                            <img src="./img/canonbarcode.svg" alt="">
-                            <h3>comma</h3>
-                            <h4>web design</h4>
-                            <p>design by sia</p>
-                            <p>2022.07.20 ~ 8.30</p>
-                            <div class="pic"></div>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <button>
-                            </button>
-                        </div>
+                        </a>
                     </div>
-                    <div class="toucharea">
-                        <div class="card card3">
-                            <h2>canon</h2>
-                            <img src="./img/canonbarcode.svg" alt="">
-                            <h3>canon</h3>
-                            <h4>web design</h4>
-                            <p>design by sia</p>
-                            <p>2022.02.20 ~ 03.20</p>
-                            <div class="pic"></div>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <button>
-                            </button>
-                        </div>
+                    <div class="gridbox2" id="remove">
+                        <a href="./scribbler/main.html">
+                            <div class="toucharea">
+                                <div class="card card">
+                                    <h2>comma</h2>
+                                    <img src="./img/canonbarcode.svg" alt="">
+                                    <h3>comma</h3>
+                                    <h4>web design</h4>
+                                    <p>design by sia</p>
+                                    <p>2022.07.20 ~ 8.30</p>
+                                    <div class="pic"></div>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <button>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./scribbler/main.html">
+                            <div class="toucharea">
+                                <div class="card card3">
+                                    <h2>canon</h2>
+                                    <img src="./img/canonbarcode.svg" alt="">
+                                    <h3>canon</h3>
+                                    <h4>web design</h4>
+                                    <p>design by sia</p>
+                                    <p>2022.02.20 ~ 03.20</p>
+                                    <div class="pic"></div>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <button>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-                <div class="gridbox3" id="remove">
-                    <div class="toucharea">
-                        <div class="card card2">
-                            <h2>scribbler</h2>
-                            <img src="./img/olympicbarcode.svg" alt="">
-                            <h3>scribbler</h3>
-                            <h4>app design</h4>
-                            <p>design by sia</p>
-                            <p>2022.01.05 ~ 02.05</p>
-                            <div class="pic"></div>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <button>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="toucharea">
-                        <div class="card card4">
-                            <h2>OLYMPIC</h2>
-                            <img src="./img/commabarcode.svg" alt="">
-                            <h3>olympic</h3>
-                            <h4>app design</h4>
-                            <p>design by sia</p>
-                            <p>2021.10.20 ~ 12.30</p>
-                            <div class="pic"></div>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <button>
-                            </button>
-                        </div>
+                    <div class="gridbox3" id="remove">
+                        <a href="./scribbler/main.html">
+                            <div class="toucharea">
+                                <div class="card card2">
+                                    <h2>scribbler</h2>
+                                    <img src="./img/olympicbarcode.svg" alt="">
+                                    <h3>scribbler</h3>
+                                    <h4>app design</h4>
+                                    <p>design by sia</p>
+                                    <p>2022.01.05 ~ 02.05</p>
+                                    <div class="pic"></div>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <button>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./scribbler/main.html">
+                            <div class="toucharea">
+                                <div class="card card4">
+                                    <h2>OLYMPIC</h2>
+                                    <img src="./img/commabarcode.svg" alt="">
+                                    <h3>olympic</h3>
+                                    <h4>app design</h4>
+                                    <p>design by sia</p>
+                                    <p>2021.10.20 ~ 12.30</p>
+                                    <div class="pic"></div>
+                                    <ul>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                    <button>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
 
-            <!-- <a href="https://dribbble.com/YancyMin" class="dr-url" target="_blank"><img class="dr"
+
+        <!-- <a href="https://dribbble.com/YancyMin" class="dr-url" target="_blank"><img class="dr"
                     src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png"
                     alt=""></a> -->
-        </div>
+
         <!-- end section -->
 
         <!-- begin section -->
 
         <div class="section" data-anchor="aboutme">
             <div class="content">
-                <h1 class="wow fadeInDown aboutme_h1" data-wow-delay="0.2s">안녕하세요, <br>디자이너 남재욱입니다.</h1>
-                <h3 style="font-size: 1.2rem; text-align: left; font-weight: 200;">웹, 앱 디자인이 메인 포지션이며 퍼블리싱은 서브 포지션으로 다루고
-                    있습니다.</h3>
+                <h1 class="wow fadeInDown aboutme_h1" data-wow-delay="0.2s">ABOUT</h1>
+                <div class="wow fadeIn">
+                    <div id="left">
+                        <div>
+                            <p>NAME</p>
+                            <p>남재욱</p>
+                        </div>
+                        <div>
+                            <p>AGE</p>
+                            <p>26</p>
+                        </div>
+                        <div>
+                            <p>E-MAIL</p>
+                            <p>jwook486@gmail.com</p>
+                        </div>
+                        <div>
+                            <p>PHONE</p>
+                            <p>010-4325-7726</p>
+                        </div>
+                    </div>
+                    <img src="./img/me.png" alt="">
+                    <div id="right">
+                        <div>
+                            <p>MAIN</p>
+                            <p>Web / App Design</p>
+                        </div>
+                        <div>
+                            <p>SUB</p>
+                            <p>Web Publishing</p>
+                        </div>
+                        <div>
+                            <p>CONTACT</p>
+                            <p><a href="https://www.instagram.com/sia.directory/"><img src="./img/insta.webp"
+                                        alt=""></a></p>
+                        </div>
+                        <div>
+                            <p>PORTFOLIO</p>
+                            <!-- <p><a href="http://www.sia.directory">www.sia.directory</a></p> -->
+                            <p><a href="https://www.behance.net/deca893f"><img src="./img/behance.png"
+                                        alt=""></a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/sia486"><img
+                                        src="./img/github.svg" alt=""></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div id="center">
+                        <div>
+                            <p>NAME</p>
+                            <p>남재욱</p>
+                        </div>
+                        <div>
+                            <p>DATE OF BIRTH</p>
+                            <p>1997.04.14</p>
+                        </div>
+                        <div>
+                            <p>E-MAIL</p>
+                            <p>jwook486@gmail.com</p>
+                        </div>
+                    </div>
+                    <div id="center">
+                        <div>
+                            <p>MAIN</p>
+                            <p>UI design</p>
+                        </div>
+                        <div>
+                            <p>SUB</p>
+                            <p>Web publishing</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="content_box">
                     <div class="skillbox">
                         <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
-                            <div class="boxtitle">DESIGN</div>
-                            <div>
-                                <div><span>figma</span></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div> <!-- End Skill Bar -->
-
-                            <div>
-                                <div><span>XD</span></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div> <!-- End Skill Bar -->
-
-                            <div>
-                                <div><span>protopie</span></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div> <!-- End Skill Bar -->
-
-                            <div>
-                                <div><span>Photoshop</span></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div> <!-- End Skill Bar -->
+                            <div class="boxtitle">DESIGN TOOL</div>
+                            <div class="flex">
+                                <div class="tool">
+                                    <div class="logoimg" alt="figma">
+                                        <!-- <span>figma</span> -->
+                                    </div>
+                                    <p>figma</p>
+                                </div>
+                                <div class="circlebox">
+                                    <div class="circle"></div>
+                                </div>
+                            </div><!-- End Skill Bar -->
+                            <div class="flex">
+                                <div class="tool">
+                                    <div class="logoimg" alt="figma">
+                                        <!-- <span>figma</span> -->
+                                    </div>
+                                    <p>XD</p>
+                                </div>
+                                <div class="circlebox">
+                                    <div class="circle"></div>
+                                </div>
+                            </div><!-- End Skill Bar -->
+                            <div class="flex">
+                                <div class="tool">
+                                    <div class="logoimg" alt="figma">
+                                        <!-- <span>figma</span> -->
+                                    </div>
+                                    <p>protopie</p>
+                                </div>
+                                <div class="circlebox">
+                                    <div class="circle"></div>
+                                </div>
+                            </div><!-- End Skill Bar -->
+                            <div class="flex">
+                                <div class="tool">
+                                    <div class="logoimg" alt="figma">
+                                        <!-- <span>figma</span> -->
+                                    </div>
+                                    <p>Photoshop</p>
+                                </div>
+                                <div class="circlebox">
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="skillbox">
-                        <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
+                        <div class="wow fadeInUp container-skillbar" data-wow-delay="0.2s">
                             <div class="boxtitle">PUBLISHING</div>
-                            <div>
-                                <div><span>HTML5</span></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div> <!-- End Skill Bar -->
+                            <div class="flex">
+                                <div class="tool">
+                                    <div class="logoimg" alt="figma">
+                                        <!-- <span>figma</span> -->
+                                    </div>
+                                    <p>HTML5</p>
+                                </div>
+                                <div class="circlebox">
+                                    <div class="circle"></div>
 
-                            <div>
-                                <div><span>CSS3</span></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div> <!-- End Skill Bar -->
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="tool">
+                                    <div class="logoimg" alt="figma">
+                                        <!-- <span>figma</span> -->
+                                    </div>
+                                    <p>CSS3</p>
+                                </div>
+                                <div class="circlebox">
+                                    <div class="circle"></div>
 
-                            <div>
-                                <div><span>JS</span></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div> <!-- End Skill Bar -->
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="tool">
+                                    <div class="logoimg" alt="figma">
+                                        <!-- <span>figma</span> -->
+                                    </div>
+                                    <p>JS</p>
+                                </div>
+                                <div class="circlebox">
+                                    <div class="circle"></div>
 
-                            <div>
-                                <div><span>jQuery</span></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                                <div class="circle"></div>
-                            </div> <!-- End Skill Bar -->
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="tool">
+                                    <div class="logoimg" alt="figma">
+                                        <!-- <span>figma</span> -->
+                                    </div>
+                                    <p>jQuery</p>
+                                </div>
+                                <div class="circlebox">
+                                    <div class="circle"></div>
+
+                                </div>
+                            </div>
                         </div>
+
+                    </div>
+                    <div id="resume" class="wow fadeInUp" data-wow-delay="0.2s">
+                        <a href="./resume/이력서_남재욱.pdf" download="자기소개서" <p>RESUME</p>
+                            <img src="./img/downbtb.svg" alt="">
+                            <p>download</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- end section -->
-
         <!-- begin section -->
 
         <div class="section" data-anchor="contact">
             <div class="content wow fadeInDown area" data-wow-delay="0.2s">
-                <h1>CONTACT ME</h1>
-                <div class="contact-area bg-color1 p-t-130 p-b-130" style="display: none;">
+                <h1>CONTACT</h1>
+                <!-- <div class="contact-area bg-color1 p-t-130 p-b-130" style="display: none;">
                     <div class="container">
                         <article class="" data-aos="fade-up">
                             <div class="row m-b-60">
                                 <div class="col-md-4">
                                     <div class="contact-info"></div>
                                     <div class="info-content">
-                                        <!-- <h5 class="heading-5"><a href="#">Office Address</a></h5> -->
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="contact-info"></div>
                                 <div class="info-content">
-                                    <!-- <h5 class="heading-5"><a href="#">Email Address</a></h5> -->
                                 </div>
                             </div>
                     </div>
                     <div class="col-md-4">
                         <div class="contact-info m-0"></div>
                         <div class="info-content">
-                            <!-- <h5 class="heading-5"><a href="#">Phone Number</a></h5> -->
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="row">
                 <div class="col-md-7">
@@ -491,7 +597,7 @@
                                 <div class="col-md-12">
                                     <div class="form-row">
                                         <div class="col-md-12">
-                                            <div class="form-group">
+                                            <div class="form-group wow fadeInLeft">
                                                 <h5 class="heading-5">Email address</h5>
                                                 <input type="text" class="form-control" id="senderEmail"
                                                     name="senderEmail" placeholder="귀하의 메일 주소를 적어주세요" required
@@ -501,7 +607,7 @@
                                     </div>
                                     <div class="form-row">
                                         <div class="col-md-12">
-                                            <div class="form-group">
+                                            <div class="form-group wow fadeInRight">
                                                 <h5 class="heading-5">Name</h5>
                                                 <input type="text" class="form-control" id="senderName"
                                                     name="senderName" placeholder="귀하의 이름을 적어주세요." required>
@@ -510,7 +616,7 @@
                                     </div>
                                     <div class="form-row">
                                         <div class="col-md-12">
-                                            <div class="form-group">
+                                            <div class="form-group wow fadeInLeft">
                                                 <h5 class="heading-5">Message</h5>
                                                 <textarea class="form-control" id="message" name="message" rows="5"
                                                     placeholder="전달하고자 하는 메세지를 적어주세요."></textarea>
@@ -625,28 +731,40 @@
                                             }
                                         })();
                                     </script>
-                                    <div class="form-group m-0">
+                                    <div class="form-group m-0 wow fadeInLeft">
                                         <button id="btnSubmit" class="btn-submit mt-2">Send
                                             Message</button>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div style="display:none" class="thankyou_message">
-                                <h2><em>Thanks</em> for contacting us! We will get back to you soon!
-                                </h2>
-                            </div> -->
+                            <div style="display:none" class="thankyou_message">
+                                <!-- <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+                                </h2> -->
+                            </div>
                         </form>
                     </div>
-                    <div class="sns">
-                        <div class="snsicon">
-                            <img src="./img/behance.png" alt="" width="60px">
-                        </div>
-                        <div class="snsicon">
-                            <img src="./img/insta.webp" alt="" width="60px">
-                        </div>
-                        <div class="snsicon">
-                            <img src="./img/brunch.png" alt="" width="60px">
-                        </div>
+                    <h5 class="heading-5">Connect with me</h5>
+                    <div class="sns wow fadeInUp">
+                        <a href="https://www.behance.net/deca893f">
+                            <div class="snsicon">
+                                <img src="./img/behance.png" alt="" width="55px">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/sia.directory/">
+                            <div class="snsicon">
+                                <img src="./img/insta.webp" alt="" width="55px">
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/sia.directory/">
+                            <div class="snsicon">
+                                <img src="./img/brunch.png" alt="" width="55px">
+                            </div>
+                        </a>
+                        <a href="https://github.com/sia486">
+                            <div class="snsicon">
+                                <img src="./img/github.svg" alt="" width="55px">
+                            </div>
+                        </a>
                         <!-- <div class="snsicon">
                             <img src="./img/blog.png" alt="" width="60px">
                         </div> -->
@@ -657,16 +775,15 @@
                                             alt="contact image" /></div>
                                 </div> -->
             </div>
-            </article>
         </div>
 
-    </div>
-    </div>
-    <!-- end section -->
+        </div>
+        </div>
+        <!-- end section -->
 
-    <!-- begin section -->
+        <!-- begin section -->
 
-    <!-- <div class="section fp-auto-height" data-anchor="connect">
+        <!-- <div class="section fp-auto-height" data-anchor="connect">
         <div class="footer">
             <p>CONNECT WITH ME</p>
             <div class="social-links">
@@ -681,9 +798,16 @@
             </div>
         </div>
     </div> -->
-    <!-- end section -->
-    </div>
+        <!-- end section -->
+        </div>
+    </body>
+    <!-- partial -->
+    <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+    <script src='./js/page.js'></script>
     <script src="./js/index.js"></script>
+    <script src="./js/preload.js"></script>
+
 </body>
 
 </html>
