@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    overflow-x: hidden;
+    background-color: #222;
+}
+.page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/commaPT1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+.page:nth-of-type(2) {
+    background-image: url("../img/commaPT2.jpg");
+}
+.page:nth-of-type(3) {
+    background-image: url("../img/commaPT3.jpg");
+}
+.page:nth-of-type(4) {
+    background-image: url("../img/commaPT4.jpg");
+}
+.page:nth-of-type(5) {
+    background-image: url("../img/commaPT5.jpg");
+}
+.page:nth-of-type(6) {
+    background-image: url("../img/commaPT6.jpg");
+}
+.page:nth-of-type(7) {
+    background-image: url("../img/commaPT7.jpg");
+}
+.page:nth-of-type(8) {
+    background-image: url("../img/commaPT8.jpg");
+}
+
+@media (min-width: 100px) and (max-width: 500px) {
+    .page {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../img/commaPT1v.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+    .page:nth-of-type(2) {
+        background-image: url("../img/commaPT2v.jpg");
+    }
+    .page:nth-of-type(3) {
+        background-image: url("../img/commaPT3v.jpg");
+    }
+    .page:nth-of-type(4) {
+        background-image: url("../img/commaPT4v.jpg");
+    }
+    .page:nth-of-type(5) {
+        background-image: url("../img/commaPT5v.jpg");
+    }
+    .page:nth-of-type(6) {
+        background-image: url("../img/commaPT6v.jpg");
+    }
+    .page:nth-of-type(7) {
+        background-image: url("../img/commaPT7v.jpg");
+    }
+    .page:nth-of-type(8) {
+        background-image: url("../img/commaPT8v.jpg");
+    }
+}
