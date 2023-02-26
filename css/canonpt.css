@@ -6,38 +6,40 @@
 }
 body {
     overflow-x: hidden;
-    background-color: #222;
+    background-color: #fff;
 }
 .section {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url("../img/commaPT1.jpg");
+    background-image: url("../img/canonPT1.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+    
+}
+img {
+    border: none;
 }
 .section:nth-of-type(2) {
-    background-image: url("../img/commaPT2.jpg");
+    background-image: url("../img/canonPT2.jpg");
 }
 .section:nth-of-type(3) {
-    background-image: url("../img/commaPT3.jpg");
+    background-image: url("../img/canonPT3.jpg");
 }
 .section:nth-of-type(4) {
-    background-image: url("../img/commaPT4.jpg");
+    background-image: url("../img/canonPT4.jpg");
 }
 .section:nth-of-type(5) {
-    background-image: url("../img/commaPT5.jpg");
+    background-image: url("../img/canonPT5.jpg");
 }
 .section:nth-of-type(6) {
-    background-image: url("../img/commaPT6.jpg");
+    background-image: url("../img/canonPT6.jpg");
 }
 .section:nth-of-type(7) {
-    background-image: url("../img/commaPT7.jpg");
+    background-image: url("../img/canonPT7.jpg");
 }
-.section:nth-of-type(8) {
-    background-image: url("../img/commaPT8.jpg");
-}
+
 #fp-nav {
     display: none;
 }
@@ -47,30 +49,28 @@ body {
         width: 100%;
         height: 100vh;
         /* margin-top: -20vh; */
-        background-image: url("../img/commaPT1v.jpg");
+        background-image: url("../img/canonPT1v.jpg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
     }
     .section:nth-of-type(2) {
-        background-image: url("../img/commaPT2v.jpg");
+        background-image: url("../img/canonPT2v.jpg");
     }
     .section:nth-of-type(3) {
-        background-image: url("../img/commaPT3v.jpg");
+        background-image: url("../img/canonPT3v.jpg");
     }
     .section:nth-of-type(4) {
-        background-image: url("../img/commaPT4v.jpg");
+        background-image: url("../img/canonPT4v.jpg");
     }
     .section:nth-of-type(5) {
-        background-image: url("../img/commaPT5v.jpg");
+        background-image: url("../img/canonPT5v.jpg");
     }
     .section:nth-of-type(6) {
-        background-image: url("../img/commaPT6v.jpg");
+        background-image: url("../img/canonPT6v.jpg");
     }
     .section:nth-of-type(7) {
-        background-image: url("../img/commaPT7v.jpg");
+        background-image: url("../img/canonPT7v.jpg");
     }
-    .section:nth-of-type(8) {
-        background-image: url("../img/commaPT8v.jpg");
-    }
+
 }
