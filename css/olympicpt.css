@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+}
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/olympicPT.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+img {
+    border: none;
+}
+.section:nth-of-type(2) {
+    background-image: url("../img/olympicPT1.jpg");
+}
+.section:nth-of-type(3) {
+    background-image: url("../img/olympicPT2.jpg");
+}
+.section:nth-of-type(4) {
+    background-image: url("../img/olympicPT3.jpg");
+}
+.section:nth-of-type(5) {
+    background-image: url("../img/olympicPT4.jpg");
+}
+.section:nth-of-type(6) {
+    background-image: url("../img/olympicPT5.jpg");
+}
+.section:nth-of-type(7) {
+    background-image: url("../img/olympicPT6.jpg");
+}
+.section:nth-of-type(8) {
+    background-image: url("../img/olympicPT7.jpg");
+}
+.section:nth-of-type(9) {
+    background-image: url("../img/olympicPT8.jpg");
+}
+.section:nth-of-type(10) {
+    background-image: url("../img/olympicPT9.jpg");
+}
+
+
+#fp-nav {
+    display: none;
+}
+/* @media (min-width: 100px) and (max-width: 500px) {
+    .section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url("../img/olympicPT1v.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+    .section:nth-of-type(2) {
+        background-image: url("../img/olympicPT2v.jpg");
+    }
+    .section:nth-of-type(3) {
+        background-image: url("../img/olympicPT3v.jpg");
+    }
+    .section:nth-of-type(4) {
+        background-image: url("../img/olympicPT4v.jpg");
+    }
+    .section:nth-of-type(5) {
+        background-image: url("../img/olympicPT5v.jpg");
+    }
+    .section:nth-of-type(6) {
+        background-image: url("../img/olympicPT6v.jpg");
+    }
+    .section:nth-of-type(7) {
+        background-image: url("../img/olympicPT7v.jpg");
+    }
+
+
+} */

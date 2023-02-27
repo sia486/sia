@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+}
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/scribblerPT1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+img {
+    border: none;
+}
+.section:nth-of-type(2) {
+    background-image: url("../img/scribblerPT2.jpg");
+}
+.section:nth-of-type(3) {
+    background-image: url("../img/scribblerPT3.jpg");
+}
+.section:nth-of-type(4) {
+    background-image: url("../img/scribblerPT4.jpg");
+}
+.section:nth-of-type(5) {
+    background-image: url("../img/scribblerPT5.jpg");
+}
+.section:nth-of-type(6) {
+    background-image: url("../img/scribblerPT6.jpg");
+}
+.section:nth-of-type(7) {
+    background-image: url("../img/scribblerPT7.jpg");
+}
+.section:nth-of-type(8) {
+    background-image: url("../img/scribblerPT8.jpg");
+}
+.section:nth-of-type(9) {
+    background-image: url("../img/scribblerPT9.jpg");
+}
+
+#fp-nav {
+    display: none;
+}
+@media (min-width: 100px) and (max-width: 500px) {
+    .section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* margin-top: -20vh; */
+        background-image: url("../img/scribblerPT1v.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+    }
+    .section:nth-of-type(2) {
+        background-image: url("../img/scribblerPT2v.jpg");
+    }
+    .section:nth-of-type(3) {
+        background-image: url("../img/scribblerPT3v.jpg");
+    }
+    .section:nth-of-type(4) {
+        background-image: url("../img/scribblerPT4v.jpg");
+    }
+    .section:nth-of-type(5) {
+        background-image: url("../img/scribblerPT5v.jpg");
+    }
+    .section:nth-of-type(6) {
+        background-image: url("../img/scribblerPT6v.jpg");
+    }
+    .section:nth-of-type(7) {
+        background-image: url("../img/scribblerPT7v.jpg");
+    }
+    .section:nth-of-type(8) {
+        background-image: url("../img/scribblerPT8v.jpg");
+    }
+    .section:nth-of-type(9) {
+        background-image: url("../img/scribblerPT9v.jpg");
+    }
+
+}
