@@ -38,6 +38,15 @@ body {
 .section:nth-of-type(8) {
     background-image: url("../img/commaPT8.jpg");
 }
+.section:nth-of-type(9) {
+    background-image: url("../img/commaPT9.jpg");
+}
+.section:nth-of-type(10) {
+    background-image: url("../img/commaPT10.jpg");
+}
+.section:nth-of-type(11) {
+    background-image: url("../img/commaPT11.jpg");
+}
 #fp-nav {
     display: none;
 }
@@ -72,5 +81,14 @@ body {
     }
     .section:nth-of-type(8) {
         background-image: url("../img/commaPT8v.jpg");
+    }
+    .section:nth-of-type(9) {
+        background-image: url("../img/commaPT9v.jpg");
+    }
+    .section:nth-of-type(10) {
+        background-image: url("../img/commaPT10v.jpg");
+    }
+    .section:nth-of-type(11) {
+        background-image: url("../img/commaPT11v.jpg");
     }
 }

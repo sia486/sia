@@ -1581,6 +1581,9 @@ input::placeholder, textarea::placeholder {
     font-size: 85% !important;
     opacity: 0.6 !important;
 }
+textarea::placeholder {
+    font-size: 93% !important;
+}
 
 
 .m-0 {
@@ -1618,7 +1621,7 @@ input::placeholder, textarea::placeholder {
     .heading-5+input, textarea {
         margin: 6px 0 10px;
         width: 320px;
-        padding: 6px 8px;
+        padding: 5px 8px 6px 8px;
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
         border-left: 1px solid #000;
@@ -1628,7 +1631,8 @@ input::placeholder, textarea::placeholder {
     }
     textarea {
         height: 18vh;
-        font-size: 0.9375rem;
+        padding: 8px;
+        font-size: 0.865rem;
     }
     #btnSubmit {
         width: 110px;
